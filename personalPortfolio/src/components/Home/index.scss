@@ -1,0 +1,44 @@
+.container{
+
+    .text-content{
+        position: absolute;
+        left: 20%;
+        top: 30%;
+
+    }
+
+    h1{
+        font-size: 60px;
+    }
+
+    h2{
+        font-size: 15px;
+        margin-top: 2%;
+        animation: fadeIn 1s 2.2s backwards;
+        letter-spacing: 2px;
+    }
+
+    .flat-button {
+        color: #ffd700;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid #ffd700;
+        margin-top: 25px;
+        float: left;
+        animation: fadeIn 1s 2.5s backwards;
+        white-space: nowrap;
+    
+        &:hover {
+          background: #ffd700;
+          color: #333;
+        }
+      }
+    }
+    
+    
+
+
