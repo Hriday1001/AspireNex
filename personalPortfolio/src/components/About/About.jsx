@@ -53,7 +53,7 @@ function About() {
 
       </div>
     </div>
-    <Loader></Loader>
+    <Loader type="pacman"/>
     </>
   );
 }

@@ -5,6 +5,7 @@ import './index.scss'
 import AnimateLetters from '../AnimateLetters/AnimateLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInbox } from '@fortawesome/free-solid-svg-icons'
+import Loader from 'react-loaders'
 
 function Home() {
   const nameArray = ['H' , 'r' , 'i' , 'd' , 'a' , 'y']
@@ -49,6 +50,7 @@ function Home() {
         </div>
         {/* <Logo /> */}
       </div>
+      <Loader type="pacman"/>
     </>
   )
 }
