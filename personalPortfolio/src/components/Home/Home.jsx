@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInbox } from '@fortawesome/free-solid-svg-icons'
 import Loader from 'react-loaders'
 
+
 function Home() {
   const nameArray = ['H' , 'r' , 'i' , 'd' , 'a' , 'y']
 

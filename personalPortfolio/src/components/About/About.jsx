@@ -30,7 +30,7 @@ function About() {
         />
       </h1>
 
-      <h2>
+      <h2 className="playwrite-gb-s-descriptionText">
       <p>
       <span>I&apos;m </span>
         a very ambitious front-end developer looking for a role in an

@@ -36,14 +36,6 @@ function Sidebar() {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to ="/contact"
-                        className={({isActive}) => `contact-link ${isActive ? "bg-white active" : ""}`}
-                        activeclassname = "active"
-                    >
-                        <FontAwesomeIcon icon={faContactBook} color="#4d4d4e"/>
-                    </NavLink>
-                </li>
-                <li>
                     <NavLink to ="/skills"
                         className={({isActive}) => `skills-link ${isActive ? "bg-white active" : ""}`}
                         activeclassname = "active"
@@ -57,6 +49,14 @@ function Sidebar() {
                         activeclassname = "active"
                     >
                         <FontAwesomeIcon icon={faWrench} color="#4d4d4e"/>
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to ="/contact"
+                        className={({isActive}) => `contact-link ${isActive ? "bg-white active" : ""}`}
+                        activeclassname = "active"
+                    >
+                        <FontAwesomeIcon icon={faContactBook} color="#4d4d4e"/>
                     </NavLink>
                 </li>
             </ol>

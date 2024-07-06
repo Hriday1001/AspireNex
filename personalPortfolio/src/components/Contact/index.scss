@@ -1,26 +1,27 @@
 .container{
 
-    .text-content-contact{
-        position: absolute;
-        left: 10%;
-        top: 20%;
-        max-width: 40%;
-        
+  .text-content-contact{
+      position: absolute;
+      left: 10%;
+      top: 15%;
+      max-width: 40%;
+      
 
-        h1{
-            font-size: 60px;
-            left : 10%;
-            animation: fadeIn 1s 0.8s forwards;
-        }
+      h1{
+          font-size: 60px;
+          left : 10%;
+          animation: fadeIn 1s 0.8s forwards;
+      }
 
-        p{
-            font-size: 15px;
-            margin-top: 2%;
-            animation: fadeIn 1s 2.2s backwards;
-            letter-spacing: 2px;
-        }
+      p{
+          font-size: 15px;
+          margin-top: 2%;
+          animation: fadeIn 1s 2.2s backwards;
+          letter-spacing: 2px;
+      }
 
-    }
+  }
+
 
     .contact-form{
         li{
@@ -124,7 +125,7 @@ input[type='text'],
     position: absolute;
     background: #000;
     top: 50px;
-    left: 55%;
+    left: 65%;
     right: 30%;
     z-index: 999999;
     width: 267px;

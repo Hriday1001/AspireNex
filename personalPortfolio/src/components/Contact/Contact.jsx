@@ -55,7 +55,7 @@ function Contact() {
               idx={15}
             />
           </h1>
-          <p className="my-10 tiny5-regular">
+          <p className="my-10 playwrite-gb-s-descriptionText">
             I am interested in freelance opportunities - especially on ambitious
             or large projects. However, if you have any other requests or
             questions, don't hesitate to contact me using below form either.
