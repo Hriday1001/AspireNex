@@ -1,14 +1,19 @@
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
-import "./index.scss";
+import { NavLink , useNavigate } from "react-router-dom";
+import { useSelector ,  useDispatch } from 'react-redux';
+import { addProduct } from "../../store/productSlice";
 
 function Searchbar() {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [searchPrompt, setSearchPrompt] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
 
     try {
       setIsLoading(true);
@@ -18,7 +23,14 @@ function Searchbar() {
         },
       });
 
-      console.log(product.data[0]);
+      navigate('/product');
+
+      const details = product.data[0];
+
+      dispatch(addProduct(details));
+
+
+      // console.log(title);
     } catch (error) {
       console.log(error);
     } finally {
@@ -28,6 +40,7 @@ function Searchbar() {
 
   return (
     <>
+
       <form className="input-form" onSubmit={handleSubmit}>
         <input
           type="text"
@@ -37,13 +50,15 @@ function Searchbar() {
           className="searchbar-input"
         />
 
-        <button
-          type="submit"
-          className="searchbar-btn"
-          disabled={searchPrompt === ""}
-        >
-          {isLoading ? "Searching..." : "Search"}
-        </button>
+        
+          <button
+            type="submit"
+            className="searchbar-btn"
+            disabled={searchPrompt === ""}
+          >
+            {isLoading ? "Searching..." : "Search"}
+          </button>
+        
       </form>
     </>
   );

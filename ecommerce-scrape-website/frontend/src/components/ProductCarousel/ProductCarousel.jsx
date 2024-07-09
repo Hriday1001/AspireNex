@@ -7,7 +7,6 @@ import product_3 from '../../assets/product-3.svg';
 import product_4 from '../../assets/product-4.svg';
 import product_5 from '../../assets/product-5.svg';
 
-import './index.scss';
 
 
 function ProductCarousel() {
