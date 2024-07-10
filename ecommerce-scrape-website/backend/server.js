@@ -37,6 +37,15 @@ async function run(productUrl) {
       }
       return useCasePoints;
     }
+
+    // const getRelatedProducts = (ele) => {
+    //   const arr = [];
+    //   for(var i = 0;i < ele.children.length;i++){
+    //     arr.push(ele.children[i].baseURI)
+    //   }
+    //   return arr;
+    // }
+    
     const elementArr = Array.from(document.querySelectorAll('#a-page'), (e) => ({
         price : document.querySelector('.a-price-whole').innerText,
         title : document.querySelector('#productTitle').innerText,
@@ -45,8 +54,9 @@ async function run(productUrl) {
         image_url : document.getElementById('landingImage').src,
         category : document.getElementById('nav-subnav').children[0].children[0].innerText,
         currency : document.getElementsByClassName('a-price-symbol')[0].innerText,
-        description : document.getElementById("nav-subnav").children[0].children[0].innerText,
-        useCasePoints : getPoints(document.getElementById("feature-bullets").children[2])
+        // description : (document.getElementById("productDescription").children[0].children[0].innerText),
+        useCasePoints : getPoints(document.getElementById("feature-bullets").children[2]),
+        // relatedProducts : getRelatedProducts(document.getElementsByClassName("a-carousel-viewport")[3].children[0])
 
     }))
 

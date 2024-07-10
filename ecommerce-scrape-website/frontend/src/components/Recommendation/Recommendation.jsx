@@ -1,16 +1,48 @@
-import React from 'react'
-import {useSelector} from 'react-redux';
+import React from "react";
+import { useSelector } from "react-redux";
+import { useRef } from "react";
+import "./index.scss";
+import Button from "@mui/material/Button";
 
 function Recommendation() {
-    const product = useSelector((state) => state.product);
-    const decision = product.recommendation.split(',')[0];
-  return (
-    <div>
+  const products = useSelector((state) => state.products);
+  const product = products[products.length - 1];
+  // console.log(products);
+  const decision = product.recommendation.split(",")[0];
+  console.log(product.relatedProducts);
+  // const points = product.recommendation.split('\n');
+  // let ref = useRef(-1);
 
-        <h1 className={`${decision == "Yes" ? "bg-green-400" : "bg-red-500"}`}>{product.recommendation}</h1>
-
-    </div>
-  )
+  if (decision == "Yes") {
+    return (
+      <>
+      <div className="button">
+        <Button variant="contained" color="success">
+          Strong approval
+        </Button>
+        </div>
+        <div className="recommendation-content">
+          <h2>{product.recommendation}</h2>
+        </div>
+        <div className="related-products">
+          {product.relatedProducts}
+        </div>
+      </>
+    );
+  } else {
+    return (
+      <>
+      <div className="button">
+        <Button variant="outlined" color="error">
+          Might try something else
+        </Button>
+        </div>
+        <div className="recommendation-content">
+          <h2>{product.recommendation}</h2>
+        </div>
+      </>
+    );
+  }
 }
 
-export default Recommendation
+export default Recommendation;

@@ -1,7 +1,7 @@
 import { createSlice , nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
-    product : {
+    products : [{
         id : 1,
         details : [{
             title : "",
@@ -12,6 +12,7 @@ const initialState = {
         recommendation : ""
         
     }
+    ]
 }
 
 export const productSlice = createSlice({
@@ -24,15 +25,15 @@ export const productSlice = createSlice({
                 details : action.payload,
                 recommendation : ""
             }
-            state.product = (product);
+            state.products.push(product);
         },
         getRecommendation : (state,action) => {
             const product = {
                 id : nanoid(),
-                details : state.product.details,
+                details : state.products[state.products.length - 1].details,
                 recommendation : action.payload
             }
-            state.product = (product);
+            state.products.push(product);
         }
     }
 })

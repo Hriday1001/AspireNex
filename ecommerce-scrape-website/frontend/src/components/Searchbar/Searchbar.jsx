@@ -4,6 +4,8 @@ import axios from "axios";
 import { NavLink , useNavigate } from "react-router-dom";
 import { useSelector ,  useDispatch } from 'react-redux';
 import { addProduct } from "../../store/productSlice";
+import '../../App.scss';
+import Logo from '../../assets/Logo.png';
 
 function Searchbar() {
   const navigate = useNavigate();
@@ -41,7 +43,23 @@ function Searchbar() {
   return (
     <>
 
-      <form className="input-form" onSubmit={handleSubmit}>
+<div className="container">
+    <img
+      src={Logo}
+      alt="image"/>
+    <div className="container-text">
+      <h2>Visualise product details
+      </h2>
+      <br />
+      <p>Enter the amazon link to your product and let ShopWisely handle the rest for you </p>
+      <br />
+      
+    </div>
+    
+  </div>
+
+  <div className="form-container">
+      <form className="input-form tiny5-regular" onSubmit={handleSubmit}>
         <input
           type="text"
           value={searchPrompt}
@@ -60,6 +78,9 @@ function Searchbar() {
           </button>
         
       </form>
+      </div>
+
+      
     </>
   );
 }
