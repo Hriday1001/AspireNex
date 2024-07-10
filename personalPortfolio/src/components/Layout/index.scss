@@ -1,0 +1,30 @@
+@media screen and (max-width: 1200px) {
+  
+    .container {
+      position: initial;
+      height: auto;
+      min-height: auto;
+    
+
+    &.contact-container,
+    &.about-container,
+    &.skills-container {
+      .text-content {
+        position: initial;
+        transform: none;
+        display: block;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    }
+
+  }
+
+  .stage-cube-cont {
+    position: initial;
+    width: 100%;
+    height: 0%;
+    overflow: visible;
+
+  }
+}  

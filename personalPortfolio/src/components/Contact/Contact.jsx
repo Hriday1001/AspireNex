@@ -41,12 +41,12 @@ function Contact() {
       );
   };
 
-  const position = [28.7500, 77.1175]
+  const position = [28.75, 77.1175];
 
   return (
     <>
-      <div className="container">
-        <div className="text-content-contact">
+      <div className="contact-container">
+        <div className="text-content">
           <h1>
             <AnimateLetters
               letterClass={letterClass}
@@ -56,9 +56,10 @@ function Contact() {
             />
           </h1>
           <p className="my-10 playwrite-gb-s-descriptionText">
-            I am interested in freelance opportunities - especially on ambitious
-            or large projects. However, if you have any other requests or
-            questions, don't hesitate to contact me using below form either.
+            I am up for freelance opportunities, especially for ambitious or
+            large projects, and I am also actively looking for job
+            opportunities. However, if you have any other requests or questions,
+            you can reach me using the below form.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -116,9 +117,7 @@ function Contact() {
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             <Marker position={position}>
-              <Popup>
-                A pretty CSS3 popup. <br /> Easily customizable.
-              </Popup>
+              <Popup></Popup>
             </Marker>
           </MapContainer>
         </div>

@@ -1,19 +1,27 @@
-.content{
+.skills-container{
     h1{
         position: absolute;
         font-size: 60px;
         left: 15%;
         top:10%;
     }
+    h2{
+      position: absolute;
+      font-size: 25px;
+      left: 15%;
+      top:23%;
+      opacity: 0;
+      animation: fadeIn 1s 1.2s forwards;
+    }
 }
 
 
 
-.skills{
+.headings-skill{
     h1{
         position: absolute;
         left: 15%;
-        top:20%;
+        top:25%;
         ul{
     
             li{
@@ -259,5 +267,51 @@
     }
     66% {
       transform: rotateY(-60deg) rotateX(60deg);
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+
+    .skills-container{
+      box-sizing: border-box;
+      h1{
+        position: absolute;
+        margin-left: 10%;
+      }
+      h2{
+        position: absolute;
+        margin-left: 0%;
+        margin-right: 2%;
+      }
+    }
+
+    .headings-skill{
+      .headings{
+        display: none;
+      }
+      
+    }
+    
+
+    .stage-cube-cont {
+      position: relative;
+      margin-top: 60%;
+      width: 100%;
+      height: 0%;
+      overflow: visible;
+    }
+    .stage-cube-cont-languagesos {
+      position: relative;
+      margin-top: 50%;
+      width: 100%;
+      height: 0%;
+      overflow: visible;
+    }
+    .stage-cube-cont-roboticsml {
+      position: relative;
+      margin-top: 50%;
+      width: 100%;
+      height: 0%;
+      overflow: visible;
     }
   }

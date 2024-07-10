@@ -1,9 +1,9 @@
-.container{
+.about-container{
 
     .text-content{
         position: absolute;
         left: 10%;
-        top: 60%;
+        top: 15%;
         max-width: 40%;
 
     }
@@ -25,7 +25,45 @@
         
     }
 
+    .timeline-container{
+        position: absolute;
+        margin-left: 65%;
+        margin-top: 6%;
+        opacity: 0;
+        animation: fadeIn 1s 3.2s forwards;
+    }
+
     
 
 }
 
+@media screen and (max-width: 1200px) {
+    .about-container{
+       box-sizing: border-box;
+
+        .text-content{
+            position: absolute;
+            left: 5%;
+            top: 14%;
+            max-width: 39%;
+    
+        }
+
+        h1{
+            font-size: 30px;
+            animation: fadeIn 1s 0.8s backwards;
+        }
+        h2{
+            p{
+                font-size: 13px;
+            }
+        }
+        .timeline-container{
+            position: absolute;
+            margin-left: 40%;
+            margin-top: 56%;
+            opacity: 0;
+            animation: fadeIn 1s 3.2s forwards;
+        }
+    }
+}

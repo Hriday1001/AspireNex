@@ -37,6 +37,16 @@
           color: #333;
         }
       }
+
+      .logo-container{
+        position: absolute;
+        margin-left: 60%;
+        margin-top: 10%;
+        opacity: 0.5;
+        animation-name: spindev;
+        animation-iteration-count: infinite;
+        animation-duration: 12s;
+      }
     }
 
 .rightcontainer{
@@ -46,6 +56,57 @@
   width: 30%;
   opacity: 0;
   animation: fadeIn 1s 3s forwards;
+}
+
+@media screen and (max-width: 1200px) {
+  
+  .container .text-content {
+    position: initial;
+    margin-top: 10%;
+    margin-left: 5%;
+    transform: none;
+    padding: 10px;
+    box-sizing: border-box;
+    h2{
+      position: initial;
+      margin-top: 5%;
+    }
+  }
+
+  .container .flat-button {
+    float: none;
+    display: block;
+    margin: 40px 110px 0 auto;
+    width: 200px;
+  }
+
+  .container .logo-container{
+    position: absolute;
+    margin-left: 0%;
+    margin-top: 10%;
+    opacity: 0.5;
+    animation-name: spindev;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+  }
+
+}
+
+@keyframes spindev {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(270deg);
+  }to {
+    transform: rotate(360deg);
+  }
 }
     
     

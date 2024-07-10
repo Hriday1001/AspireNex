@@ -6,6 +6,7 @@ import AnimateLetters from '../AnimateLetters/AnimateLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInbox } from '@fortawesome/free-solid-svg-icons'
 import Loader from 'react-loaders'
+import homelogo1 from '../../assets/home-logo1.png';
 
 
 function Home() {
@@ -49,7 +50,9 @@ function Home() {
             CONTACT ME
           </Link>
         </div>
-        {/* <Logo /> */}
+        <div className="logo-container">
+        <img src={homelogo1} alt="web-developer" />
+        </div>
       </div>
       <Loader type="pacman"/>
     </>

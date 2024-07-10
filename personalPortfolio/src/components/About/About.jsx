@@ -2,7 +2,8 @@ import React from "react";
 import './index.scss'
 import { useState, useEffect } from "react";
 import AnimateLetters from "../AnimateLetters/AnimateLetters";
-import Loader from 'react-loaders'
+import Loader from 'react-loaders';
+import CustomizedTimeline from "../CustomizedTimeline/CustomizedTimeline";
 
 function About() {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -19,7 +20,7 @@ function About() {
 
   return (
     <>
-    <div className="container">
+    <div className="about-container">
       <div className="text-content">
       <h1>
         <AnimateLetters
@@ -33,24 +34,22 @@ function About() {
       <h2 className="playwrite-gb-s-descriptionText">
       <p>
       <span>I&apos;m </span>
-        a very ambitious front-end developer looking for a role in an
-        established IT company with the opportunity to work with the latest
-        technologies on challenging and diverse projects.
+       currently pursuing Software Engineering at Delhi Technological University, where I have gained hands-on experience in web development , machine learning , robotics and related fields. .Through various projects and coursework, I have honed my skills in these fields and am on the lookout for opportunities to further improve my development skills.
       </p>
       <br />
       <p>
-        <span>I&apos;m </span>
-        quiet confident, naturally curious, and perpetually working on
-        improving my chops one design problem at a time.
+        Additionally, I have a strong foundation in programming languages like C++ , Python, Javascript that enables me to quickly grasp new concepts in associated fields. I am eager to apply my skills to real-world projects, collaborate with talented professionals, and continue learning and growing in these domains.
+
       </p>
       <br />
       <p>
-        If I need to define myself in one sentence that would be a family
-        person, father of a beautiful daughter, a sports fanatic, photography
-        enthusiast, and tech-obsessed!!!
+      I am confident that my background, skills, and enthusiasm make me shine amongst others as a strong candidate. I am eager to contribute to organisations and learn from the valuable experiences offered by them.
       </p>
       </h2>
 
+      </div>
+      <div className="timeline-container">
+        <CustomizedTimeline/> 
       </div>
     </div>
     <Loader type="pacman"/>

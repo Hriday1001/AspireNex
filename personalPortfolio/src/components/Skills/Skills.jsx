@@ -31,7 +31,7 @@ const Skills = () => {
 
   return (
     <>
-    <div className="content">
+    <div className="skills-container">
       <h1>
         <AnimateLetters
           letterClass={letterClass}
@@ -40,15 +40,40 @@ const Skills = () => {
           idx={15}
         />
       </h1>
+      <h2 className="playwrite-gb-s-descriptionText">I have tried my luck on and experimented with several domains and have hands on experience on working with : </h2>
       </div>
-    <div className="skills">
+    <div className="headings-skill">
     <h1>
-      <ul className="my-40">
+      <ul className="my-40 headings">
       <li className="developer-tools mx-10 tiny5-regular"> DEVELOPER TOOLS</li> 
       <li className="languages-os mx-20 tiny5-regular"> LANGUAGES & OS </li>
       <li className="robotics-ml mx-10 tiny5-regular"> ROBOTICS & ML </li>
        </ul>
     </h1>
+    <div className="stage-cube-cont">
+        <div className="cubespinner">
+          <div className="face1">
+            <FontAwesomeIcon icon={faDocker} color="#DD0031" />
+          </div>
+          <div className="face2">
+            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+          </div>
+          <div className="face3">
+            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+          </div>
+          <div className="face4">
+            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+          </div>
+          <div className="face5">
+            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+          </div>
+          <div className="face6">
+            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+          </div>
+        </div>
+      </div>
+
+
   <div className="stage-cube-cont-languagesos">
     <div className="cubespinner-languagesos">
       <div className="face1">
@@ -93,28 +118,7 @@ const Skills = () => {
           
   <h1>  </h1>
 
-      <div className="stage-cube-cont">
-        <div className="cubespinner">
-          <div className="face1">
-            <FontAwesomeIcon icon={faDocker} color="#DD0031" />
-          </div>
-          <div className="face2">
-            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-          </div>
-          <div className="face3">
-            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-          </div>
-          <div className="face4">
-            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-          </div>
-          <div className="face5">
-            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-          </div>
-          <div className="face6">
-            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
-          </div>
-        </div>
-      </div>
+      
 
       </div>
 
